@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Корзина — Merchify Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cart.js">
+</head>
+<body id="page-cart">
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">🛍️ Merchify Store</a>
+      <a class="cart" href="cart.html" title="Корзина">
+        <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Корзина" />
+        <span id="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Ваша корзина</h2>
+
+    <div id="cart-root" class="cart-root"></div>
+
+    <div id="cart-actions" class="cart-actions hidden">
+      <p class="small">Итого: <strong id="cart-total">0 ₽</strong></p>
+      <div style="display:flex;gap:8px;margin-top:12px;">
+        <button id="checkout-btn" class="btn">Оформить заказ</button>
+        <button id="clear-btn" class="btn" style="background: #ef4444; box-shadow:none;">Очистить корзину</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Merchify Store — все права защищены</p>
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>
